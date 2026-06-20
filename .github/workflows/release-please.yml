@@ -18,6 +18,7 @@ jobs:
         if: ${{ github.ref_name == 'main' }}
         uses: google-github-actions/release-please-action@v3
         with:
+          node-version: '24.x'  # 更新为Node 24
           release-type: node
           default-branch: main
           token: ${{ secrets.GITHUB_TOKEN }}
